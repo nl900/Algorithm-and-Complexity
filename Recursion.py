@@ -19,8 +19,8 @@ def iter_factorial(n):
  
  Time complexity is the number of times the function is called. O(n)
  
- Recursion consumes more space and can lead to huge recursive stacks.
- As for every recursive call, state is saved to the call stack.
+ Recursion consumes more space as for every recursive call, the state is saved to
+ the call stack. This can lead to huge recursive stacks
  For factorial(6) a stack of 6 is required until the call is amde to factorial(0)
  and the value is finally computed. So a stack of size N is implicitly allocated for 
  storing the state of function calls. O(n)
