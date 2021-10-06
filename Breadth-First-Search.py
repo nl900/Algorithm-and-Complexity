@@ -4,6 +4,7 @@ It starts at the root (for a tree) or an arbitrary node of a graph referred to a
 It explores all neighbour nodes first before moving to the next level neighbours.
 
 Time complexity is the total number of vertices and edges O(V+E) in the connected graph.
+As every vertix is entered into and each edge is checked once.
 
 Below is an iterative implementation of BFS where a queue is used to do the traversal
 """
