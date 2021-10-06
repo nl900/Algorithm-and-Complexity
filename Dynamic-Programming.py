@@ -14,6 +14,10 @@ subproblems across branches. If we store them when it was encountered the first 
 we won't need to recompute it the next time.
 
 Below is a solution to the fibonacci sequence using memoization.
+Memoization stores subproblem results in a top down approach where the problem is broken
+into smaller and smaller sub problems until the base case is reached. And so the common
+solution is recursive. It solves sub problems as they are needed rather than solving all
+in order as in bottom-up.
 
 """
 
