@@ -20,10 +20,10 @@ def iter_factorial(n):
  Time complexity is the number of times the function is called. O(n)
  
  Recursion consumes more space and can lead to huge recursive stacks.
- As for every recursive call, a stack is used.
- Space complexity for recursion can be approximated by:
- space complexity = number of function calls * number of variables per call
- Since the function is called n times so O(n)
+ As for every recursive call, state is saved to the call stack.
+ For factorial(6) a stack of 6 is required until the call is amde to factorial(0)
+ and the value is finally computed. So a stack of size N is implicitly allocated for 
+ storing the state of function calls. O(n)
  """
 def recurs_factorial(n):
     if n == 0:
