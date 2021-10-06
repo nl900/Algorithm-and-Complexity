@@ -10,15 +10,23 @@ Consider the problem of calculating the fibonacci sequence where
 Fib(n) = Fib(n-1) + Fib(n-2)
 A sample sequence of 0, 1, 1, 2, 3, 5, 8, 13, 21.....
 If you draw out the tree for the recursive solution, you will see there are overlapping
-subproblems across branches. If we store them when it was encountered the first time,
-we won't need to recompute it the next time.
+subproblems across branches. eg fb(3) is called to calculate fib(4) and fib(5), and fib(4)
+is called to calculate fib(5) also. If we store the results when it was encountered the first 
+time, we won't need to recompute it the next time.
 
 Below is a solution to the fibonacci sequence using memoization.
 Memoization stores subproblem results in a top down approach where the problem is broken
 into smaller and smaller sub problems until the base case is reached. And so the common
 solution is recursive. It solves sub problems as they are needed rather than solving all
 in order as in bottom-up.
+Since memoization store data in a non-sequential way, when it's needed, hashtable is used.
 
+Complexity
+In recursive approach, for every value, 2 function calls are made. eg fib(6) calls fib(5)
+and fib(4). fib(5) is calling fib(4) and fib(3). O(2^n) exponential complexity.
+
+In dynamic programming approach, we solve each subproblem once with a total of n subproblems.
+So O(n)
 """
 
 memoi = {}
