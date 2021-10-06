@@ -1,11 +1,9 @@
 """
-
-
 Consider the problem of calculating the factorial n! where
 n!=n*(n-1)!
 
 Below is the iterative solution.
-Time complexity is the number of cycles repeated inside the loop O(n)
+Time complexity is the number of cycles O(n)
 Space complexity O(1)
 """
 
@@ -19,13 +17,13 @@ def iter_factorial(n):
  Recursion is when a function calls itself. Here is the recursive solution 
  to the factorial problem.
  
-
- Time complexity is the number of times it is called. O(n)
+ Time complexity is the number of times the function is called. O(n)
  
  Recursion consumes more space and can lead to huge recursive stacks.
- For every recursive call, a stack is used.
- Space complexity for recursion 
- 
+ As for every recursive call, a stack is used.
+ Space complexity for recursion can be approximated by:
+ space complexity = number of function calls * number of variables per call
+ Since the function is called n times so O(n)
  """
 def recurs_factorial(n):
     if n == 0:
