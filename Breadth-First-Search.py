@@ -3,8 +3,10 @@ BFS is an algorithm for traversing a tree or graph.
 It starts at the root (for a tree) or an arbitrary node of a graph referred to as a search key.
 It explores all neighbour nodes first before moving to the next level neighbours.
 
-Time complexity is the total number of vertices and edges O(V+E) in the connected graph.
-As every vertix is entered into and each edge is checked once.
+Time complexity is the total number of vertices and edges O(V+E) in the connected graph 
+when it's represented as an adjacency list. As every vertix is entered into and each edge 
+is checked once.
+Space complexity is O(V) as need to hold all vertices.
 
 Below is an iterative implementation of BFS where a queue is used to do the traversal
 """
