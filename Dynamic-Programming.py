@@ -21,12 +21,17 @@ solution is recursive. It solves sub problems as they are needed rather than sol
 in order as in bottom-up.
 Since memoization store data in a non-sequential way, when it's needed, hashtable is used.
 
-Complexity
+Time complexity
 In recursive approach, for every value, 2 function calls are made. eg fib(6) calls fib(5)
 and fib(4). fib(5) is calling fib(4) and fib(3). O(2^n) exponential complexity.
 
 In dynamic programming approach, we solve each subproblem once with a total of n subproblems.
 So O(n)
+
+Spae complexity
+In recurisve approach, function is called n times with n stacks so O(n)
+In dynamic programming each value is stored so O(n)
+
 """
 
 memoi = {}
