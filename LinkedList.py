@@ -18,6 +18,7 @@ class LinkedList:
     def __init__(self):
          self.head = None
     
+    # insert node at the end
     def insert(self, data):
         newNode = Node(data)
         if (self.head):
