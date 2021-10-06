@@ -1,7 +1,12 @@
 """
 A linked list is a linear collection of nodes 
 where each node contains a data value and a reference 
-to the next node in the list
+to the next node in the list.
+
+This structure allows for efficient insert and removal of a node at O(1) constant time.
+However, accessing and searching for a particular node is linear O(n).
+
+Below implements a singly linked list where each node points to the next node in the list.
 """
 
 class Node:
