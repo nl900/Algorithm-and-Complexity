@@ -16,7 +16,7 @@ visited = [] #keep track of nodes that has been visited
 
 def bfs(graph, visited, node):
     visited.append(node)
-    queue = []
+    queue = [] # keep track of what has been visited
     queue.append(node)
     while queue: # loop until the queue is empty
         v = queue.pop(0) #remove the first
