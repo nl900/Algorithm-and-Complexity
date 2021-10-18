@@ -17,7 +17,7 @@ def mergeSort(arr):
     if len(arr) > 1:
         mid = len(arr)//2 # Find midpoint
   
-        # Divide into 2 halves
+        # Divide into 2 halves and copy to temp arrays
         L = arr[:mid]
         R = arr[mid:]
  
