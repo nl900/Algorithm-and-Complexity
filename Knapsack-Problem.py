@@ -5,6 +5,7 @@ is not more than C.
 
 The brute-force recursive solution is to try all combinations of items and choose the one with
 maximum profit where the weight does not exceed C.
+Time complexity exponential O(2^n)
 """
 
 def knapSack():
