@@ -11,5 +11,5 @@ if it has more than 2 elements and it's no the base case, then it is divided int
 3) Combine: merge the 2 sorted subarrays back into a single sorted subarray.
 
 Running time O(nlogn) as it divides the array in two halves and takes linear time to merge two halves.
-Space O(n)
+Space O(n) for the temporary array
 """
