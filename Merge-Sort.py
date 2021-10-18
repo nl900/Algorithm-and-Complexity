@@ -9,7 +9,7 @@ It works likes this:
 2) Conquer: if it's only 1 element, then it's already sorted, return. Otherwise, call mergesort on the two subarrays.
 3) Combine: merge the smaller lists in sorted order.
 
-Running time O(nlogn) as it divides the array in to halves to logn levels and takes linear time to merge all the levels.
+Running time O(nlogn) because it takes linear time to merge logn levels.
 Space O(n) for the temporary array
 """
 
