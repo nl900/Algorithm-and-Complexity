@@ -9,4 +9,4 @@ Time complexity exponential O(2^n)
 Space complexity O(n) to store the recursive stack
 """
 
-def brute_knapSack():
+def brute_knapsack():
