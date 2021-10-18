@@ -24,6 +24,7 @@ def mergeSort(arr):
         mergeSort(L) # Sorting the first half
         mergeSort(R) # Sorting the second half
   
+        # merge L and R into original array
         i = j = k = 0
 
         while i < len(L) and j < len(R):
