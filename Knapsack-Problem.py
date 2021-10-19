@@ -25,7 +25,7 @@ def brute_knapsack(c, w, v, n):
     return max(v[n-1] + brute_knapsack(c-w[n-1], w, v, n-1), brute_knapsack(c, w, v, n-1))
 
 """
-Optimal substructure: if the optimal solution can be constructed from the optimal solutions
+Optimal substructure: the optimal solution can be constructed from the optimal solutions
 of its subproblems.
 The max value is obtained by taking the max of 
 * n-1 items
@@ -33,7 +33,10 @@ The max value is obtained by taking the max of
 The max value obtained by adding n-1 items is the optimal solution to a subproblem.
 The optimal solution of the problem can be constructed using the optimal solutions of the 
 subproblems.
+So the knapsack problem has the optimal substructure property.
 
 Analyzing the recursion tree, for c and n (current index), brute_knapsack(1,1) is being
-called twice. The overlapping subproblem property
+called twice. The overlapping subproblem property.
+
+The two properties makes it an ideal candidate for dynamic programming.
 """
