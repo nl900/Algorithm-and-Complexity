@@ -62,3 +62,10 @@ def memoi_knapsack(v, w, c, currentIndex):
 
   dp[currentIndex][c] = max(p1, p2)
   return dp[currentIndex][c]
+
+values = [60, 100, 120]
+weights = [10, 20, 30]
+c = 50
+n = len(values)
+
+dp = [[-1 for x in range(c+1)] for y in range(n)]
