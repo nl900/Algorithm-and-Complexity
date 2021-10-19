@@ -38,4 +38,9 @@ Analyzing the recursion tree, for c and n (current index), brute_knapsack(1,1) i
 called twice. The overlapping subproblem property.
 
 The two properties makes it an ideal candidate for dynamic programming.
+
+Below is an implementation of top down dp using memoization.
+Time complexity O(N*C)
+Space complexity O(N*C) for memoization array, O(n) for recursion call stack.
+Asymptotical equivalent to O(N*C)
 """
