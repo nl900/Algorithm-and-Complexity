@@ -70,3 +70,4 @@ n = len(values)
 
 # initialize a 2D matrix for memoization
 dp = [[-1 for x in range(c+1)] for y in range(n)]
+print(memoi_knapsack(values, weights, 50, 0))
