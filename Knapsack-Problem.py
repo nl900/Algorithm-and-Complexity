@@ -17,6 +17,10 @@ def brute_knapsack(c, w, v, n):
   # optimal solution
   if (w[n-1] > c):
     return brute_knapsack(c, w, v, n-1)
+  # pick the maximum value subset
+  # the max of 
+  # 1) Current item included
+  # 2) Current item not included
   else:
     return max(v[n-1] + brute_knapsack(c-w[n-1], w, v, n-1), brute_knapsack(c, w, v, n-1))
 
