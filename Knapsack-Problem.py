@@ -9,4 +9,13 @@ Time complexity exponential O(2^n)
 Space complexity O(n) to store the recursive stack
 """
 
-def brute_knapsack():
+def brute_knapsack(c, w, v, n):
+  # base case
+  if n==0 or c==0:
+    return 0
+  if (w[n-1] > c):
+    return brute_knapsack(c, w, v, n-1)
+  else:
+    return max(v[n-1] + brute_knapsack(c-w[n-1], w, v, n-1), brute_knapsack(c, w, v, n-1))
+
+    
