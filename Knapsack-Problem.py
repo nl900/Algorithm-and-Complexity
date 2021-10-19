@@ -44,3 +44,20 @@ Time complexity O(N*C)
 Space complexity O(N*C) for memoization array, O(n) for recursion call stack.
 Asymptotical equivalent to O(N*C)
 """
+
+def memoi_knapsack(v, w, c, currentIndex):
+
+  if c <= 0 or currentIndex >= len(v):
+    return 0
+
+  if dp[currentIndex][c] != -1:
+    return dp[currentIndex][c]
+
+  p1 = 0
+  if w[currentIndex] <= c:
+    p1 = v[currentIndex] + memoi_knapsack(v, w, c - w[currentIndex], currentIndex + 1)
+
+  p2 = memoi_knapsack(v, w, c, currentIndex + 1)
+
+  dp[currentIndex][c] = max(p1, p2)
+  return dp[currentIndex][c]
