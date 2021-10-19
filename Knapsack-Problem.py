@@ -28,8 +28,8 @@ def brute_knapsack(w, v, c, n):
 Optimal substructure: the optimal solution can be constructed from the optimal solutions
 of its subproblems.
 The max value is obtained by taking the max of 
-* n-1 items
-* Value of the nth item plus the max value obtained by adding n-1 items
+1) n-1 items
+2) Value of the nth item plus the max value obtained by adding n-1 items
 The max value obtained by adding n-1 items is the optimal solution to a subproblem.
 The optimal solution of the problem can be constructed using the optimal solutions of the 
 subproblems.
