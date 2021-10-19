@@ -46,17 +46,18 @@ Asymptotical equivalent to O(N*C)
 """
 
 def memoi_knapsack(v, w, c, currentIndex):
-
-  if c <= 0 or currentIndex >= len(v):
+  if c <= 0 or currentIndex >= len(v): # base case
     return 0
 
-  if dp[currentIndex][c] != -1:
+  if dp[currentIndex][c] != -1: #get result from memoi if have
     return dp[currentIndex][c]
 
+  # if the current element is within c, recursive call
   p1 = 0
   if w[currentIndex] <= c:
     p1 = v[currentIndex] + memoi_knapsack(v, w, c - w[currentIndex], currentIndex + 1)
 
+  # recursive call after excluding current item
   p2 = memoi_knapsack(v, w, c, currentIndex + 1)
 
   dp[currentIndex][c] = max(p1, p2)
