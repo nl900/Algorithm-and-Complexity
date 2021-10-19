@@ -13,6 +13,8 @@ def brute_knapsack(c, w, v, n):
   # base case
   if n==0 or c==0:
     return 0
+  # if the weight of the current item is more than c, this item can't be included in the
+  # optimal solution
   if (w[n-1] > c):
     return brute_knapsack(c, w, v, n-1)
   else:
