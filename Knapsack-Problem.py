@@ -10,8 +10,8 @@ Space complexity O(n) to store the recursive stack
 """
 
 def brute_knapsack(c, w, v, n):
-  # base case
-  if n==0 or c==0:
+ 
+  if n==0 or c==0: # base case
     return 0
   # if the weight of the current item is more than c, this item can't be included in the
   # optimal solution 
