@@ -68,4 +68,5 @@ weights = [10, 20, 30]
 c = 50
 n = len(values)
 
+# initialize a 2D matrix for memoization
 dp = [[-1 for x in range(c+1)] for y in range(n)]
