@@ -18,8 +18,8 @@ def brute_knapsack(c, w, v, n):
   if (w[n-1] > c):
     return brute_knapsack(c, w, v, n-1)
   # pick the maximum value subset, the max of 
-  # 1) Current item included
-  # 2) Current item not included
+  # 1) Value of the nth item plus max value obtained by adding n-1 items
+  # 2) Max value obtained by adding n-1 items, excluding the nth item
   # and recursively process the remaining items
   else:
     return max(v[n-1] + brute_knapsack(c-w[n-1], w, v, n-1), brute_knapsack(c, w, v, n-1))
