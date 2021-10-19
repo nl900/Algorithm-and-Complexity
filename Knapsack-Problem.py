@@ -24,4 +24,16 @@ def brute_knapsack(c, w, v, n):
   else:
     return max(v[n-1] + brute_knapsack(c-w[n-1], w, v, n-1), brute_knapsack(c, w, v, n-1))
 
-    
+"""
+Optimal substructure: if the optimal solution can be constructed from the optimal solutions
+of its subproblems.
+The max value is obtained by taking the max of 
+* n-1 items
+* Value of the nth item plus the max value obtained by adding n-1 items
+The max value obtained by adding n-1 items is the optimal solution to a subproblem.
+The optimal solution of the problem can be constructed using the optimal solutions of the 
+subproblems.
+
+Analyzing the recursion tree, for c and n (current index), brute_knapsack(1,1) is being
+called twice. The overlapping subproblem property
+"""
