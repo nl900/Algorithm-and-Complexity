@@ -11,8 +11,8 @@ Height of the tree is the maximum height of any node in the tree.
 Binary Search Tree is a binary tree to help search data in the tree where the left subtree
 of a node is less than the node's key and the right subtree is greater than the node's key.
 
-Time complexity for insert, search and delete is O(logn) on average but O(n) at worst
-case when the tree is unbalanced.
+Time complexity for insert, search and delete is O(logn) which is height of the tree O(h) 
+on average but O(n) at worst case when the tree is unbalanced.
 Space complexity is O(n)
 """
 
