@@ -33,16 +33,32 @@ class Node:
       else:
         self.right = Node(data)
         return True
+  
+  def find(self, target):
+    if self.data == target:
+      return True
+    elif target < self.data and self.left:
+      return self.left.find(target)
+    elif target > self.data and self.right:
+      return self.right.find(target)
+    return False
 
 class BST:
   def __init__(self):
     self.root = None
     
-   def insert(self, data):
+  def insert(self, data): 
     if self.root:
       return self.root.insert(data)
-    else: # duplicate
+    else: 
       self.root = Node(data)
       return True
+   
+  def find(self, target):
+    if self.root:
+      return self.root.find(target)
+    else:
+      return False
+  
     
   
