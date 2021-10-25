@@ -27,6 +27,6 @@ def iter_factorial(n):
  """
 def recurs_factorial(n):
     if n == 0:
-        return 1;
+        return 1
     return n * recurs_factorial(n-1)
   
