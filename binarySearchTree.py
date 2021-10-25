@@ -8,8 +8,12 @@ The height of a node is the number of nodes on the path from the node to the dee
 Count from the node and up towards the root.
 Height of the tree is the maximum height of any node in the tree.
 
-Binary Search Tree is a binary tree to help search data in the tree where the nodes greater
-than the root is on the right and nodes less than the root is on the right.
+Binary Search Tree is a binary tree to help search data in the tree where the left subtree
+of a node is less than the node's key and the right subtree is greater than the node's key.
+
+Time complexity for insert, search and delete is O(logn) on average but O(n) at worst
+case when the tree is unbalanced.
+Space complexity is O(n)
 """
 
 class Node:
