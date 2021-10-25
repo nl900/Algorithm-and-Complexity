@@ -9,5 +9,40 @@ Count from the node and up towards the root.
 Height of the tree is the maximum height of any node in the tree.
 
 Binary Search Tree is a binary tree to help search data in the tree where the nodes greater
-than the root is on the right and nodes less than the rot is on the right.
+than the root is on the right and nodes less than the root is on the right.
 """
+
+class Node:
+  def __init__(self, data):
+    self.data = data
+    self.left = None
+    self.right = None
+   
+  def insert(self, data):
+    if self.data = data: # duplicate
+      return False
+    elif data < self.data:
+      if self.left:
+        return self.left.insert(data)
+      else:
+        self.left = Node(data)
+        return True
+    else:
+      if self.right:
+        return self.right.insert(data)
+      else:
+        self.right = Node(data)
+        return True
+
+class BST:
+  def __init__(self):
+    self.root = None
+    
+   def insert(self, data):
+    if self.root:
+      return self.root.insert(data)
+    else: # duplicate
+      self.root = Node(data)
+      return True
+    
+  
