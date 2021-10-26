@@ -1,5 +1,6 @@
 """
-Traversal on graph or tree structures.
+Traversal on graph or tree structures. It explores as far as possible down each branch before
+backtracking.
 
 Time complexity is O(V+E) on a graph when represented as an adjacency list (higher if using a list), 
 V is the number of vertices and E is the number of edges.
